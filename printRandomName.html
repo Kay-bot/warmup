@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Function library example</title>
+  <style>
+    body {
+      text-align: center;
+      padding: 2rem;
+      background-color: beige;
+    }
+    button {
+      font-size: 16px;
+      margin: 2rem 0 2rem 0;
+    }
+
+    .section {
+      color: blue;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    
+  </style>
+</head>
+<body>
+<h1>Choose a random name</h1>
+<button class="btn">click here</button>
+
+<section class="section"></section>
+
+<script>
+const button = document.querySelector('.btn');
+const section = document.querySelector('.section')
+let names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+let para = document.createElement('p');
+
+function chooseName(){
+  names[Math.random()*names.length]
+}
+
+button.onclick = function(){
+  section.textContent = names[Math.floor(Math.random()*names.length)]  
+}
+
+section.innerHTML = ' ';
+
+section.appendChild(para);
+    
+</script>
+</body>
+</html>
