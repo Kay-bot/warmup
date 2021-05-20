@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Functions: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      canvas {
+        border: 1px solid black;
+        margin-left: 25%;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+    </section>
+
+    <canvas width="480" height="320">
+
+    </canvas>
+
+  </body>
+  <script>
+    let canvas = document.querySelector('canvas');
+    let ctx = canvas.getContext('2d');
+
+    let x = 200;
+    let y = 100;
+    let width = 100;
+    let height = 75;
+    let color = 'blue';
+
+    // Add your code here
+    canvas.onclick = function() {
+      // ctx.strokeStyle = color
+      // ctx.strokeRect(x,y,width,height); 
+      ctx.fillStyle = color
+      ctx.fillRect(x,y,width,height)
+    }
+ 
+    // Don't edit the code below here!
+    const section = document.querySelector('section');
+  
+  </script>
+
+</html>
