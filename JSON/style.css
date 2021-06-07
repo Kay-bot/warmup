@@ -42,7 +42,10 @@ section p {
 
 section ul {
     margin-top: 0;
+    list-style-type: none;
 }
+
+section li {}
 
 h2 {
     font-size: 2.5rem;
